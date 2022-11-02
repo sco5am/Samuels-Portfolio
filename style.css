@@ -1,34 +1,42 @@
+* {
+}
+
 body {
     font-family: sans-serif;
     padding: 0;
     margin: 0;
+    background-color: #555;
   }
   
   h1 {
-    text-align: center;
+    text-align: left;
     font-size: 50px;
     margin: 0;
     font-weight: 300;
     color: inherit;
     padding: 25px;
+    color: #fff;
+    display: inline-block;
+    color: #333;
   }
   
   
   header{
-    height: 300px;
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin: 0;
-    background-image: url(images/1719750.webp)
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
   }
   
   /* NAVIGATION */
   nav {
-    width: 60%;
-    margin: auto;
-    background: #fff;
-    padding: 25px 0;
-    box-shadow: 0px 5px 0px #dedede;
+    width: 50%;
+    margin-top: 10px;
+    background: rgb(255, 255, 255);
+    padding: 25px; 
   }
   nav ul {
     list-style: none;
@@ -97,20 +105,199 @@ body {
     -moz-animation: fill 1s forwards;
     opacity: 1;
   }
-  .hero-banner { 
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-    padding: 1%;
+  /*t*/
+  address {
+    width: 50%;
+    margin-top: 10px;
+    background: rgb(255, 255, 255);
+    padding: 25px; 
+    box-shadow: 0px 5px 0px #686869;
+  }
+  address ul {
+    list-style: none;
+    text-align: center;
+  }
+  address ul li {
+    display: inline-block;
+  }
+  address ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  address ul li a,
+  address ul li a:after,
+  address ul li a:before {
+    transition: all .5s;
+  }
+  address ul li a:hover {
+    color: #555;
+  }
+  
+  address.stroke ul li a,
+  address.fill ul li a {
+    position: relative;
+  }
+  address.stroke ul li a:after,
+  address.fill ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #aaa;
+    height: 1px;
+  }
+  
+  
+  address.fill ul li a {
+    transition: all 2s;
+  }
+  
+  address.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  address.fill ul li a:hover {
+    color: #fff;
+    z-index: 1;
+  }
+  address.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+  }
+  /*y*/
+  main {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    text-align: right;
-  }
-  .Star-Map {
-    background-image: url("images/R.jpeg");
-  }
+    flex-wrap: wrap;
+    justify-content: center;
+  align-items: center;
+  height: 100px;
 
+  }
+  article {
+   background-color: rgb(255, 255, 255);
+   margin: 30px;
+   padding: 30px;
+   height: 300px;
+   display: inline-block;
+   flex-wrap: wrap;
+   
+   }
+   h2 {
+  text-align: center;
+  font-size: 40px;
+   }
+
+   article p {
+    text-align: center;
+   }
+
+   .pro-photo {
+    margin-left: 20px;
+    height: 300px;
+    float: right;
+   }
+
+   .contact-me {
+    background-color: #fff;
+    display: inline-block;
+   }
+   /*test*/
+
+   .projects {
+    margin: 25px 0;
+    padding: 10px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  
+  .projects> h2 {
+  
+    
+  }
+  
+  .projects > div {
+    flex: 0 0 77%;
+  }
+  
+  .projects p {
+    margin-bottom: 20px;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .flex-item {
+    border: 5px solid;
+    min-height: 150px;
+    max-height: 150px;
+    flex-basis: calc(50% - 1em);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 20px 0;
+    margin: 0.5em;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-size: 150%;
+    transition: all 0.5s;
+    font-size: 0.9rem;
+  }
+  
+  /* feature first portfolio item */
+  .flex-item:first-child {
+      min-height: 400px;
+      flex-basis: 100%;
+  }
+  
+  .flex-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .flex-item div {
+    padding: 8px 10px;
+  }
+  
+  .flex-item h3 {
+    font-size: 1.6rem;
+  }
+  
+  
+  /* portfolio project images */
+  .cat {
+    background-image: url('images/513271524c7f991dd2658b600895580c.jpg');
+  }
+  
+  .water {
+    background-image: url("images/OIP.jpeg");
+  }
+  
+  .star-map {
+    background-image: url("images/ori_3483586_3c128402bd38c7d985ad63adae5532c9acd5c2ac_vector-sky-star-map-with-constellations-stars.jpg");
+  }
   @-webkit-keyframes fill {
     0% {
       width: 0%;
