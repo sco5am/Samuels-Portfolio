@@ -1,0 +1,19 @@
+{
+  "name": "challenge-02",
+  "version": "1.0.0",
+  "description": "For this assignment i was tasked with creating a portfolio to show off my previous work to potential employers. While creating this project I made sure to include an about me section which included a recent photo, a section showcasing different projects i've completed, and a section containing various contact methods i can be reached at. I also made sure the links in the navigation bar corresponded to the correct section in order to ensure ease of access.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sco5am/challenge-02.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sco5am/challenge-02/issues"
+  },
+  "homepage": "https://github.com/sco5am/challenge-02#readme"
+}
